@@ -57,6 +57,7 @@ ___
 📈 Visualization of the distribution
  - Histogram
  - Matrix Correlation
+ - Boxplot
  - Scatter plot + Regression Line
 <img width="1489" height="990" alt="image" src="https://github.com/user-attachments/assets/34e896b4-53f9-4dda-9b76-e2551bd0da5e" />
 
