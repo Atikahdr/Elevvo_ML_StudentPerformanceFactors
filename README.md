@@ -53,6 +53,13 @@ ___
 ---
 
 ✅ 2. Exploratory Data Analysis (EDA)
+
+📈 Visualization of the distribution
+ - Histogram
+ - Matrix Correlation
+ - Scatter plot + Regression Line
+<img width="1489" height="990" alt="image" src="https://github.com/user-attachments/assets/34e896b4-53f9-4dda-9b76-e2551bd0da5e" />
+
 📊 Statistical Testing
  - ANOVA → for numerical vs target
  - Chi-Square → for categorical vs target
@@ -132,19 +139,6 @@ Best CV Accuracy: 95.34%
    
 📌The linear Logistic Regression model without Polynomial transformation provides a better bias-variance balance for this dataset.
 
----
-
-✅ 9. Model Interpretation (SHAP Analysis)
-
-Applied SHAP to understand feature contribution.
-
-🔎 Key Findings:
- - Attendance has the highest positive impact
- - Interaction between Attendance & Study Hours significantly boosts prediction probability
- -Low Attendance strongly drives low performance prediction
-
-📌 SHAP confirms statistical and modeling results.
-
  ---
 📊 Final Model Performance
 ---
@@ -163,6 +157,20 @@ Applied SHAP to understand feature contribution.
 - ✔ SHAP provides strong explainability
  
  ---
+
+✅ 9. Model Interpretation (SHAP Analysis)
+
+Applied SHAP to understand feature contribution.
+ <img width="880" height="940" alt="image" src="https://github.com/user-attachments/assets/4684e9e7-9c12-4d1b-940b-33dddf1da2d9" />
+
+🔎 Key Findings:
+ - Attendance has the highest positive impact
+ - Interaction between Attendance & Study Hours significantly boosts prediction probability
+ -Low Attendance strongly drives low performance prediction
+
+📌 SHAP confirms statistical and modeling results.
+
+ ---
  
 📚 Concepts Covered
 ---
@@ -174,3 +182,12 @@ Applied SHAP to understand feature contribution.
 - 📈 Model Comparison
 - 🧠 Explainable AI (SHAP)
 - 📉 Multiclass ROC-AUC
+
+ ---
+💡 Business Insight
+---
+- To improve student performance, schools need to focus on:
+- Improving attendance
+- Managing study hours
+- Remedial programs based on previous grades
+- Increasing access to learning resources
