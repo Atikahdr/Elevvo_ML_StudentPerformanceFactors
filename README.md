@@ -93,23 +93,24 @@ Models Evaluated:
 
 | Model	Accuracy | Accuracy Mean | ROC-AUC Mean |
 |----------------|---------------|--------------|
-| Logistic Regression	| 94.72 | 98.95 |
-| SVM	| 91.64 | 98.33 |
-| Gradient Boosting 	| 83.56 | 94.73 |
-| Random Forest	| 77.37 | 91.04
-| KNN	| 71.47 | 86.56
-| Decision Tree	| 69.59 |76.45 
+| Logistic Regression	| 95.02 | 98.99 |
+| SVM	| 91.64 | 98.22 |
+| Gradient Boosting 	| 85.18 | 95.20 |
+| Random Forest	| 80.57 | 93.13 |
+| KNN	| 73.55  | 88.70 |
+| Decision Tree	| 72.85 | 78.98 | 
 
 📌 Best Baseline Model: Logistic Regression 💡
 
  ---
  
- ✅ 6. Feature Selection (ANOVA SelectKBest)
+ ✅ 6. Feature Importance - Logistic Regression
  
  Selected top k most significant features before modeling.
- -  Academic effort
- -  Attendance
- -  Hours studied
+ - Attendance
+ - Motivation_Level_Low
+ - Hours_Studied
+ - Previous_Scores
    
 📌 The primary determinants of academic performance. 
  
@@ -134,8 +135,8 @@ Best CV Accuracy: 95.34%
 
 ✅ 8. Polynomial Feature
  - Adding Polynomial Features (degree=2)
- - Training accuracy (99.62%)
- - Test set (90.54%),
+ - Training accuracy (99.02%)
+ - Test Accuracy (91.07%),
  - (Indicating overfitting))
    
 📌The linear Logistic Regression model without Polynomial transformation provides a better bias-variance balance for this dataset.
@@ -143,22 +144,10 @@ Best CV Accuracy: 95.34%
  ---
 📊 Final Model Performance
 ---
- - Test Accuracy ≈ ~74–76%
  - ROC-AUC (Multiclass OVR) evaluated
  - Balanced class handling applied
    
  ---
- 🧠 Key Insights
----
-- ✔ Attendance is the most influential factor
-- ✔ Non-linear relationships improve prediction
-- ✔ Interaction effects matter more than single variables
-- ✔ Logistic Regression performs best for this dataset
-- ✔ L1 regularization enhances interpretability
-- ✔ SHAP provides strong explainability
- 
- ---
-
 ✅ 9. Model Interpretation (SHAP Analysis)
 
 Applied SHAP to understand feature contribution.
@@ -166,13 +155,24 @@ Applied SHAP to understand feature contribution.
 
 🔎 Key Findings:
  - Attendance has the highest positive impact
- - Interaction between Attendance & Study Hours significantly boosts prediction probability
- -Low Attendance strongly drives low performance prediction
+ - Academic Effort & Study Hours, Study habits coaching program
+ - Previous Scores, Remedial program based on previous performance
 
 📌 SHAP confirms statistical and modeling results.
 
  ---
- 
+  📊 Business Insight
+---
+- ✔ Improving attendance discipline
+- ✔ Optimizing learning hours and quality
+- ✔ Remedial programs based on previous grades
+- ✔ Increasing access to learning resources
+- ✔ L1 regularization enhances interpretability
+- ✔ Strengthening parental support
+
+In conclusion, interventions based on study habits and environmental support will have the greatest impact on improving student performance compared to demographic factors alone.
+
+ ---
 📚 Concepts Covered
 ---
 - 📊 Statistical Hypothesis Testing
@@ -181,14 +181,6 @@ Applied SHAP to understand feature contribution.
 - 🤖 Classification Modeling
 - ⚙ Hyperparameter Tuning
 - 📈 Model Comparison
-- 🧠 Explainable AI (SHAP)
 - 📉 Multiclass ROC-AUC
-
+- 🧠 Explainable AI (SHAP)
  ---
-💡 Business Insight
----
-- To improve student performance, schools need to focus on:
-- Improving attendance
-- Managing study hours
-- Remedial programs based on previous grades
-- Increasing access to learning resources
