@@ -72,7 +72,7 @@ def predict_student(model, preprocessor, poly, data_input):
 # 🔹 HOME PAGE
 if st.session_state.page == "home":
     st.title("🎓 Student Performance Prediction App")
-    st.image("student.jpg", use_container_width=True)
+    header_img = "Student.jpg"
     st.subheader(" **Welcome!** ")
     st.markdown("""
         This interactive application helps you predict a student's **performance category**
@@ -444,5 +444,6 @@ elif st.session_state.page == "history":
 
 #  Footer
 st.markdown("---")
+
 
 st.caption("💡Polynomial Logistic Regression | Machine Learning Prediction Project")
